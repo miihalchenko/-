@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1130">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/akrobat.css">
+  <link rel="stylesheet" href="libs/fontawesome-pro-5.13.0/all.min.css">
+  <title>Document</title>
+</head>
+  <body>
+  <div class="page">
+    <header class="header">
+          <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                  <p>Ассенизатор</p>
+                  <p>В любое время</p>
+                </div>
+                <div id="menu" class="header-nav">
+                  <ul>
+                    <li><a href="#yak1">Главная</a></li>
+                    <li><a href="#yak2">Услуги</a></li>
+                    <li><a href="#yak3">Ассенизатор</a></li>
+                    <li><a href="#yak4">Контакты</a></li>
+                  </ul>
+                </div><!-- header-nav -->
+                <div class="header-tel">
+                  <a href="tel:+79782246924">+7 (978) 224-69-24</a>
+                  <p>Звоните, мы доступны 24/7!</p>
+                </div>
+              </div><!-- header-container -->
+          
+            
+              <div id="yak1" class="header-inner">
+                <div class="container">
+                  <h1 class="header-inner__title"> 
+                  <span>Ассенизатор недорого</span>
+                    <span> в городе Саки и Сакском районе</span>
+                  </h1>
+                  <div class="btn">
+                    <a  href="tel:+79782246924">позвонить</a>
+                  </div>
+                </div><!-- container -->
+            </div><!-- header-inner -->
+          </div><!-- container -->
+      </header>
+
+
+      <section class="services" id="yak2">
+        <div class="container">
+            <h2 class="services-title">мы оказываем услуги</h2>
+            <div class="services-items">
+              <div class="services-item">
+                <i class="fad fa-toilet"></i>
+                
+                <p>Очистки загородных туалетов, биотуалетов, с последующим вывозом и утилизацией</p>
+              </div><!-- services-item -->
+              <div class="services-item">
+                <i class="far fa-house-day"></i>
+                <p>Выкачки сливных ям на строительных участках, дачах, огородах и частных домовладениях</p>
+              </div><!-- services-item -->
+              <div class="services-item">
+                <i class="far fa-recycle"></i>
+                <p>Прочистки как централизованной так и автономной канализации</p>
+              </div><!-- services-item -->
+            
+            </div>
+        </div><!-- container -->
+
+    </section>
+
+      <section class="sanitation" id="yak3">
+        <div class="container">
+          <h2 class="sanitation-title">
+            <span>Вас обслужат профессионалы</span> на чистой и надежной спецтехнике</h2>
+            <div class="sanitation-inner">
+              <div class="sanitation-item">
+                <h3 class="sanitation-item__title"> Ассенизатор ГАЗ</h3>
+                <div class="car-description">
+                  <p>Тип цистерны - вакумная</p>
+                  <p>Вместимость цистерны - 4.3 м<sup>3</sup></p>
+                  <p>Глубина очищаемой ямы - 6 м</p>
+                  <p>Длина шланга - 30 м</p>
+                </div>
+                <div class="price">
+                    <h3>Цены:</h3>
+                    <ul>
+                      <li>По городу Саки - 1 500 руб.</li>
+                      <li>Ближний район - 2 000 руб.</li>
+                      <li>Дальний район - 2 500 руб.</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="sanitation-item__image">
+                  <img src="img/img-01.jpg" width="600" alt="">
+              </div>
+            </div><!-- sanitation-inner -->
+        </div>
+      </section>
+  <footer class="footer" id="yak4">
+    <div class="container">
+      <div class="footer-items">
+        <div class="footer-item__left">
+          <div class="logo">
+            <p>Ассенизатор</p>
+            <p>В любое время</p>
+          </div>
+        </div>
+
+        <div class="footer-item__center">
+          <ul>
+            <li><a class="footer-whatsapp" href=" https://api.whatsapp.com/send?phone=79782246924">Написать в WhatsApp</a></li>
+            <li><a class="footer-viber" href="viber://add?number=79782246924
+              ">или Viber</a></li>
+          </ul>
+        </div>      
+
+        <div class="footer-item__right">
+            <a class="footer-tel" href="tel:+79782246924">+7 (978) 224-69-24</a>
+            <p>Звоните, мы доступны 24/7!</p>
+        </div>
+      </div>
+    </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#menu").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1300);
+       });
+   });
+   </script>
+</body>
+</html>
